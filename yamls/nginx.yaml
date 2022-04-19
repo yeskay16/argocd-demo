@@ -4,6 +4,9 @@ metadata:
   labels:
     app: nginx
   name: nginx
+   annotations:
+   notifications.argoproj.io/subscribe.on-sync-succeeded.github: ""
+   
 spec:
   replicas: 3
   selector:
